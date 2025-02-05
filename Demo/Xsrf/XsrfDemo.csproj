@@ -23,8 +23,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\MintPlayer.AspNetCore.SpaServices.Xsrf\MintPlayer.AspNetCore.SpaServices.Xsrf.csproj" />
-	  <ProjectReference Include="..\..\MintPlayer.AspNetCore.SpaServices\MintPlayer.AspNetCore.SpaServices.csproj" />
+	  <ProjectReference Include="..\..\Alethic.AspNetCore.SpaServices.Xsrf\Alethic.AspNetCore.SpaServices.Xsrf.csproj" />
+	  <ProjectReference Include="..\..\Alethic.AspNetCore.SpaServices\Alethic.AspNetCore.SpaServices.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

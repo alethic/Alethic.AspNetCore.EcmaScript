@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<Description>This package contains the abandoned node services.</Description>
+		<PackageTags>ASP.NET Core, Node services</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="node_modules\**\*" />
+		<EmbeddedResource Include="Content\**\*" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Yarn.MSBuild" Version="*" />
+	</ItemGroup>
+
+	<!-- Version of this SDK is set in global.json -->
+	<Sdk Name="Yarn.MSBuild" />
+
+	<Target Name="YarnInstall">
+		<Message Text="Running yarn install on $(MSBuildProjectFile)" Importance="High" />
+		<Yarn Command="install --mutex network --frozen-lockfile" />
+	</Target>
+
+	<Target Name="PrepublishScript" DependsOnTargets="YarnInstall" BeforeTargets="PrepareForPublish" Condition=" '$(IsCrossTargetingBuild)' != 'true' ">
+		<Exec Command="node node_modules/webpack/bin/webpack.js" />
+	</Target>
+
+</Project>

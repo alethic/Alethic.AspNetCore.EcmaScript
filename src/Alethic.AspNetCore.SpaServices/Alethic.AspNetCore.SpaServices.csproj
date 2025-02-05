@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<Description>This package contains the ASP.NET Core prerenderer.</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Alethic.AspNetCore.NodeServices\Alethic.AspNetCore.NodeServices.csproj" />
+		<ProjectReference Include="..\Alethic.AspNetCore.SpaServices.Abstractions\Alethic.AspNetCore.SpaServices.Abstractions.csproj" />
+	</ItemGroup>
+
+</Project>

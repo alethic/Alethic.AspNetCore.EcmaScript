@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<Description>This package is built as a dependency of MintPlayer.AspNetCore.SpaServices.Routing.</Description>
+	</PropertyGroup>
+	
+	<ItemGroup>
+	  <None Remove="Content\Node\prerenderer.js" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <EmbeddedResource Include="Content\Node\prerenderer.js" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Alethic.AspNetCore.NodeServices\Alethic.AspNetCore.NodeServices.csproj" />
+		<ProjectReference Include="..\Alethic.AspNetCore.SpaServices\Alethic.AspNetCore.SpaServices.csproj" />
+	</ItemGroup>
+
+</Project>

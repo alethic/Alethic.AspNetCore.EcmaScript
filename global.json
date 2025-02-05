@@ -1,19 +1,10 @@
 {
-	"sdk": {
-		"version": "9.0.100"
-	},
-	"tools": {
-		"dotnet": "9.0.100",
-		"runtimes": {
-			"dotnet/x64": [
-				"$(MicrosoftNETCoreAppInternalPackageVersion)"
-			],
-			"dotnet/x86": [
-				"$(MicrosoftNETCoreAppInternalPackageVersion)"
-			]
-		}
-	},
+    "sdk": {
+        "version": "8.0.100",
+        "rollForward": "latestFeature"
+    },
 	"msbuild-sdks": {
+		"Microsoft.Build.NoTargets": "3.7.56",
 		"Yarn.MSBuild": "1.15.2"
 	}
 }
