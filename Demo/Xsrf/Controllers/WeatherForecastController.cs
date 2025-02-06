@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace MintPlayer.AspNetCore.XsrfForSpas.Demo.Controllers;
+namespace Alethic.AspNetCore.XsrfForSpas.Demo.Controllers;
 
 [ApiController]
 [Route("[controller]")]

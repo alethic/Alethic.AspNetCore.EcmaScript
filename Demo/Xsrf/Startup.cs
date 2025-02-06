@@ -1,6 +1,6 @@
-using MintPlayer.AspNetCore.SpaServices.Extensions;
+using Alethic.AspNetCore.EcmaScript.SpaServices.Extensions;
 
-namespace MintPlayer.AspNetCore.XsrfForSpas.Demo;
+namespace Alethic.AspNetCore.XsrfForSpas.Demo;
 
 public class Startup
 {

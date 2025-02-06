@@ -38,7 +38,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\..\Alethic.AspNetCore.SpaServices.Routing\Alethic.AspNetCore.SpaServices.Routing.csproj" />
+		<ProjectReference Include="..\..\..\src\Alethic.AspNetCore.EcmaScript.Node\Alethic.AspNetCore.EcmaScript.Node.csproj" />
+		<ProjectReference Include="..\..\..\src\Alethic.AspNetCore.EcmaScript.SpaServices.Prerendering\Alethic.AspNetCore.EcmaScript.SpaServices.Prerendering.csproj" />
+		<ProjectReference Include="..\..\..\src\Alethic.AspNetCore.EcmaScript.SpaServices.Routing\Alethic.AspNetCore.EcmaScript.SpaServices.Routing.csproj" />
+		<ProjectReference Include="..\..\..\src\Alethic.AspNetCore.EcmaScript.SpaServices\Alethic.AspNetCore.EcmaScript.SpaServices.csproj" />
 		<ProjectReference Include="..\Demo.Data\Demo.Data.csproj" />
 	</ItemGroup>
 

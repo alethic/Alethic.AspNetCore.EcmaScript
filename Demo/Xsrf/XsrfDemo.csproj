@@ -23,11 +23,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\Alethic.AspNetCore.SpaServices.Xsrf\Alethic.AspNetCore.SpaServices.Xsrf.csproj" />
-	  <ProjectReference Include="..\..\Alethic.AspNetCore.SpaServices\Alethic.AspNetCore.SpaServices.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <Folder Include="ClientApp\src\app\components\" />
 	</ItemGroup>
 

@@ -1,20 +1,24 @@
+using Alethic.AspNetCore.EcmaScript.SpaServices.Prerendering.Services;
+using Alethic.AspNetCore.EcmaScript.SpaServices.Routing;
+
 using Demo.Data.Dal.Services;
 using Demo.Web.Extensions;
-using MintPlayer.AspNetCore.SpaServices.Routing;
 
 namespace Demo.Web.Services;
 
-public class DemoSpaPrerenderingService : MintPlayer.AspNetCore.SpaServices.Prerendering.Services.ISpaPrerenderingService
+public class DemoSpaPrerenderingService : ISpaPrerenderingService
 {
+
 	private readonly ISpaRouteService spaRouteService;
 	private readonly IPersonService personService;
+
 	public DemoSpaPrerenderingService(ISpaRouteService spaRouteService, IPersonService personService)
 	{
 		this.spaRouteService = spaRouteService;
 		this.personService = personService;
 	}
 
-	public Task BuildRoutes(MintPlayer.AspNetCore.SpaServices.Prerendering.Services.ISpaRouteBuilder routeBuilder)
+	public Task BuildRoutes(ISpaRouteBuilder routeBuilder)
 	{
 		routeBuilder
 		   .Route("", "home")

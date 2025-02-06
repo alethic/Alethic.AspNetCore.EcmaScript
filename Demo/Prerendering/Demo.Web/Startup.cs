@@ -1,10 +1,14 @@
-using Demo.Data.Extensions;
-using Microsoft.AspNetCore.Mvc.Razor;
-using MintPlayer.AspNetCore.SpaServices.Prerendering;
-using MintPlayer.AspNetCore.SpaServices.Routing;
-using MintPlayer.AspNetCore.SpaServices.Extensions;
-using WebMarkupMin.AspNetCore8;
 using System.Text.RegularExpressions;
+
+using Alethic.AspNetCore.EcmaScript.SpaServices.Extensions;
+using Alethic.AspNetCore.EcmaScript.SpaServices.Prerendering;
+using Alethic.AspNetCore.EcmaScript.SpaServices.Routing;
+
+using Demo.Data.Extensions;
+
+using Microsoft.AspNetCore.Mvc.Razor;
+
+using WebMarkupMin.AspNetCore8;
 
 namespace Demo.Web;
 
